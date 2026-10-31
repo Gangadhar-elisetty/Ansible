@@ -1,0 +1,1 @@
+# shall-script-roshop-appilication
