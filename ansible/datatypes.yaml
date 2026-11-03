@@ -1,0 +1,26 @@
+- name: demo on datatypes
+  hosts: local
+  connection: local
+  become: yes
+
+  vars:
+    program: "devops with aws"
+    duration: 140
+    it.live: true
+    details:
+      months: 4
+      trainer: gangadhar elisetty
+
+    topics:
+      - linux
+      - shell
+      - ansible
+      - aws
+
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+      msg: |
+        program: {{program}}
+        duration: {{duration}}
+        details: {{details}}
