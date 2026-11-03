@@ -4,12 +4,12 @@
   become: Yes
 
   tasks:
-    -name: install package
-     ansible.builtin.package:
-       name: "{{item}}"
-       state: present
+    - name: install package
+      ansible.builtin.package:
+        name: "{{item}}"
+        state: present
   
-    loop:
+      loop:
       - mysql
       - nginx
       - zip
