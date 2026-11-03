@@ -17,3 +17,8 @@
       ansible.builtin.debug:
         msg: "yes package manager is debian"
       when: ansible_facts.os_family == "debian"
+
+    - name: check fedora or not
+      ansible.builtin.debug:
+        msg: "yes this package manager is fedora"
+      when: ansible_facts.os_family == "fedora"
