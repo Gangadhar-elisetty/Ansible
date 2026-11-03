@@ -6,7 +6,7 @@
   vars:
     program: "devops with aws"
     duration: 140
-    it.live: true
+    it_live: true
     details:
       months: 4
       trainer: gangadhar elisetty
