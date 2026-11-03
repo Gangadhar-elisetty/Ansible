@@ -20,7 +20,8 @@
   tasks:
     - name: print variables
       ansible.builtin.debug:
-      msg: |
-        program: {{program}}
-        duration: {{duration}}
-        details: {{details}}
+        msg: |
+          program: {{program}}
+          duration: {{duration}}
+          details: {{details}}
+          topics: {{topics}}
