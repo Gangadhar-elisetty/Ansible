@@ -1,0 +1,15 @@
+-name: hello work
+hosts: local
+connection: local
+tasks:
+  -name: print hello work
+  ansible.builtin.debug:
+    mes: "hello work"
+
+-name: play-2
+hosts: local
+connection: local
+tasks:
+  -name: print hello word and play2
+  ansible.builtin.debug:
+    mes: "hello from play-2 and tasks"
